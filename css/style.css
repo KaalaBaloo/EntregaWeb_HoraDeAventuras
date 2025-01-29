@@ -5,14 +5,28 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
 body{
-    background: blue;
+    background: lightblue;
 }
 
 header {
-    height: 25vh;
-    padding: 3rem;
     text-align: center;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+}
+
+header h1 {
+    padding-top: 2vh;
+    font-size: 5vh;
 }
 
 main {
@@ -20,10 +34,78 @@ main {
 }
 
 section {
-    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     gap: 2rem;
+    padding-bottom: 5vh;
+}
+
+/* ------------------------------------------------------
+Index */
+
+#presentation img {
+    height: auto;
+    width: 40vw;
+}
+
+/* ------------------------------------------------------
+Menu */
+
+#buttons {
+    flex-direction: column;
+    text-align: center;
+}
+
+#buttons a {
+    padding: 1vh;
+}
+
+/* ------------------------------------------------------
+Character */
+
+#selector .half {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: start;
+    width: 50%;
+    height: auto;
+}
+
+.half h2{
+    padding-bottom: 3vh;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    height: 21vh;
+    width: 21vh;
+}
+
+.column img {
+    object-fit: cover;
+}
+
+#info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#info img {
+    object-fit: cover;
+    width: 50%;
+    height: auto;
+    padding-right: 3vw;
+}
+
+#stats
+{
+    padding-top: 5vh;
 }
