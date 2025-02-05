@@ -152,3 +152,21 @@ div #descripcion_mapa {
 
 /* ------------------------------------------------------
 HUD */
+
+#hud {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 8vh;
+    padding-bottom: 12vh;
+}
+
+#hud img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#hud h2 {
+    padding: 1vh;
+}
