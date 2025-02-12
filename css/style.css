@@ -80,8 +80,13 @@ section {
 
 #c2a a
 {
-    color: red;
+    color:rgb(210, 10, 10);
     text-decoration: none;
+}
+
+#c2a h1
+{
+    font-family: "Slackey";
 }
 
 /* ------------------------------------------------------
@@ -103,6 +108,19 @@ Menu */
 
 #buttons a {
     padding: 1vh;
+    color:rgb(210, 10, 10);
+    text-decoration: none;
+}
+
+#buttons h2
+{
+    padding: 2vw;
+    background-color: rgba(245, 247, 246, 0.589);
+}
+
+#buttons h2:hover
+{
+    background-color: rgba(245, 247, 246, 0.87);
 }
 
 /* ------------------------------------------------------
@@ -136,6 +154,11 @@ Character */
 
 .column img {
     object-fit: cover;
+    filter:brightness(100%);
+}
+
+.column img:hover {
+    filter:brightness(80%);
 }
 
 #info {
@@ -154,13 +177,13 @@ Character */
 
 #stats
 {
-    padding-top: 5vh;
+    padding-top: 3vh;
     width: 40vw;
 }
 
 .bar {
     width: 100%;
-    height: 20px;
+    height: 10px;
     background: #ddd;
     border-radius: 10px;
     overflow: hidden;
