@@ -22,11 +22,18 @@ img {
     vertical-align: middle;
 }
 
+.logo {
+    height: 30vh;
+    width: auto;
+}
+
 body{
     background-image: url("../media/images/FondoNubes.png");
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
+    height: 100vh;
+    width: 100vw;
 }
 
 h1{
@@ -81,8 +88,9 @@ section {
 Index */
 
 #presentation img {
-    height: auto;
+    height: 25vh;
     width: 40vw;
+    object-fit: cover;
 }
 
 /* ------------------------------------------------------
