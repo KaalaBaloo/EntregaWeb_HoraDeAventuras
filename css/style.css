@@ -2,7 +2,18 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+}
+
+.slackey-regular {
+    font-family: "Slackey", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.uncial-antiqua-regular {
+    font-family: "Uncial Antiqua", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 img {
@@ -12,7 +23,24 @@ img {
 }
 
 body{
-    background: lightblue;
+    background-image: url("../media/images/FondoNubes.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    font-family: "Uncial Antiqua";
+}
+
+h2
+{
+    font-family: "Slackey";
+}
+
+h3
+{
+    font-family: "Slackey";
 }
 
 header {
@@ -33,6 +61,7 @@ main {
     padding: 3rem;
 }
 
+
 section {
     display: flex;
     justify-content: center;
@@ -40,6 +69,12 @@ section {
     flex-direction: row;
     gap: 2rem;
     padding-bottom: 5vh;
+}
+
+#c2a a
+{
+    color: red;
+    text-decoration: none;
 }
 
 /* ------------------------------------------------------
@@ -112,6 +147,7 @@ Character */
 #stats
 {
     padding-top: 5vh;
+    width: 40vw;
 }
 
 .bar {
