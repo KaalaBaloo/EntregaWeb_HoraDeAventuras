@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+    //Characters
+
     $('#gallery img').hover(function() {
         if (!$(this).hasClass('selected')) {
             $(this).css('filter', 'brightness(80%)');
@@ -34,5 +36,9 @@ $(document).ready(function() {
             $('#stamina-bar').css('width', stamina + '%');
         }, 50);
     });
+
+    
+
+
 });
 
