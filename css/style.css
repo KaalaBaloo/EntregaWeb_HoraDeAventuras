@@ -317,7 +317,7 @@ MEDIA QUERIES */
 
 @media only screen and (min-width: 1080px) {
 
-header a img {
+header .remove {
     display: none;
 }
 
@@ -330,6 +330,12 @@ h3
 {
     font-size: 1.3vw;
 }
+
+p
+{
+    font-size: 1.3vw;
+}
+
 
     /* ------------------------------------------------------
 Character */
