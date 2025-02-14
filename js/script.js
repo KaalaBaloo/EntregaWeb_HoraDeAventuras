@@ -52,67 +52,70 @@ $(document).ready(function() {
     })
 
 
-    //HUD
+  // HUD Controls
+  if ($('#graphicsButton').length) {
+    const graphicsButton = document.getElementById('graphicsButton');
+    let graphicsLevels = ['Alta', 'Media', 'Baja'];
+    let currentGraphics = 0;
 
-    // Botón para cambiar la calidad gráfica
-  const graphicsButton = document.getElementById('graphicsButton');
-  let graphicsLevels = ['Alta', 'Media', 'Baja'];
-  let currentGraphics = 0;
+    graphicsButton.addEventListener('click', () => {
+        currentGraphics = (currentGraphics + 1) % graphicsLevels.length;
+        graphicsButton.textContent = graphicsLevels[currentGraphics];
+    });
+}
 
-  graphicsButton.addEventListener('click', () => {
-    currentGraphics = (currentGraphics + 1) % graphicsLevels.length;
-    graphicsButton.textContent = graphicsLevels[currentGraphics];
-  });
+if ($('#textSizeButton').length) {
+    const textSizeButton = document.getElementById('textSizeButton');
+    let textSizes = ['Pequeño', 'Normal', 'Grande'];
+    let currentTextSize = 1;
 
-  // Botón para cambiar el tamaño del texto
-  const textSizeButton = document.getElementById('textSizeButton');
-  let textSizes = ['Pequeño', 'Normal', 'Grande'];
-  let currentTextSize = 1;
+    textSizeButton.addEventListener('click', () => {
+        currentTextSize = (currentTextSize + 1) % textSizes.length;
+        textSizeButton.textContent = textSizes[currentTextSize];
+        document.body.style.fontSize = currentTextSize === 0 ? '12px' : currentTextSize === 1 ? '16px' : '20px';
+    });
+}
 
-  textSizeButton.addEventListener('click', () => {
-    currentTextSize = (currentTextSize + 1) % textSizes.length;
-    textSizeButton.textContent = textSizes[currentTextSize];
-    document.body.style.fontSize = currentTextSize === 0 ? '12px' : currentTextSize === 1 ? '16px' : '20px';
-  });
-
-  // Botón para cambiar la transparencia de la interfaz
-  const transparencyButton = document.getElementById('transparencyButton');
-  let transparencyLevels = ['Opaca', 'Semitransparente', 'Transparente'];
-  let currentTransparency = 0;
-
-  transparencyButton.addEventListener('click', () => {
-    currentTransparency = (currentTransparency + 1) % transparencyLevels.length;
-    transparencyButton.textContent = transparencyLevels[currentTransparency];
+if ($('#transparencyButton').length) {
+    const transparencyButton = document.getElementById('transparencyButton');
+    let transparencyLevels = ['Opaca', 'Semitransparente', 'Transparente'];
+    let currentTransparency = 0;
     const transparencyValues = ['rgba(255, 255, 255, 0.9)', 'rgba(255, 255, 255, 0.6)', 'rgba(255, 255, 255, 0.3)'];
-    document.querySelector('.settings-window').style.backgroundColor = transparencyValues[currentTransparency];
-  });
 
-//Config
+    transparencyButton.addEventListener('click', () => {
+        currentTransparency = (currentTransparency + 1) % transparencyLevels.length;
+        transparencyButton.textContent = transparencyLevels[currentTransparency];
+        document.querySelector('.settings-window').style.backgroundColor = transparencyValues[currentTransparency];
+    });
+}
+
+// Music Toggle & Volume Control
+if ($('#musicToggle').length && $('#volumeControl').length) {
+    // Check if elements exist before adding event listeners
     const musicToggle = document.getElementById('musicToggle');
-  const volumeControl = document.getElementById('volumeControl');
-  const backgroundMusic = document.getElementById('backgroundMusic');
+    const backgroundMusic = document.getElementById('backgroundMusic');
+    const volumeControl = document.getElementById('volumeControl');
 
-  // Reproducir música automáticamente cuando se cargue la página
-  backgroundMusic.volume = 0.5; // Volumen inicial
-  backgroundMusic.play();
-
-  // Alternar música (encender/apagar)
-  musicToggle.addEventListener('click', () => {
-    if (backgroundMusic.paused) {
-      backgroundMusic.play();
-      musicToggle.textContent = 'Sí';
-      musicToggle.classList.remove('off');
-    } else {
-      backgroundMusic.pause();
-      musicToggle.textContent = 'No';
-      musicToggle.classList.add('off');
+    if (musicToggle && backgroundMusic) {
+        musicToggle.addEventListener('click', () => {
+            if (backgroundMusic.paused) {
+                backgroundMusic.play();
+                musicToggle.textContent = 'Sí';
+                musicToggle.classList.remove('off');
+            } else {
+                backgroundMusic.pause();
+                musicToggle.textContent = 'No';
+                musicToggle.classList.add('off');
+            }
+        });
     }
-  });
 
-  // Ajustar el volumen de la música
-  volumeControl.addEventListener('input', () => {
-    backgroundMusic.volume = volumeControl.value;
-  });
+    if (volumeControl && backgroundMusic) {
+        volumeControl.addEventListener('input', () => {
+            backgroundMusic.volume = volumeControl.value;
+        });
+    }
+}
 
 
 });

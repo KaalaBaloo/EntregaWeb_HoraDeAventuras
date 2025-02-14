@@ -127,13 +127,7 @@ section {
 
 #c2a h1:hover
 {
-    font-family: "Slackey";
-    background-image: url("../media/images/BtonAjustes.png");
     filter: brightness(80%);
-    padding: 8vw;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 /* ------------------------------------------------------
@@ -160,11 +154,11 @@ Index */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    
 }
+
 #presentation p {
     padding-bottom: 5vh;
-    
+    padding-right: 4vw;
 }
 
 footer {
@@ -366,15 +360,6 @@ Maps */
     padding: 12vw;
 }
 
-/* Descripción del mapa */
-#map-description {
-    font-size: 1.8vw;
-    color: #333;
-    text-align: center;
-    max-width: 50%;
-    margin-top: 1vh;
-}
-
 /* Contenedor del carrusel */
 .carousel-container {
     display: flex;
@@ -493,6 +478,26 @@ header .remove {
     display: none;
 }
 
+header img {
+    width: 100%;
+    height: 12vw;
+    object-fit: cover;
+    object-position: center -80px;
+}
+
+.logo {
+    height: auto;
+    width: 40vw;
+    object-position: center;
+    margin-top: -2vw;
+    padding-bottom: 3vw;
+}
+
+header h1 {
+    padding-top: 2vh;
+    font-size: 3.5vw;
+}
+
 h2
 {
     font-size: 2vw;
@@ -506,6 +511,44 @@ h3
 p
 {
     font-size: 1.3vw;
+}
+
+#c2a a img
+{
+    margin-left: -25vw;
+    margin-top: -25vw;
+    width: 25vw;
+}
+
+
+/* ------------------------------------------------------
+Index */
+
+#presentation {
+    padding-top: 2vw
+}
+
+#presentation img {
+    width: 25vw;
+}
+
+#presentation p {
+    padding-bottom: 5vh;
+    padding-right: 4vw;
+}
+
+
+/* ------------------------------------------------------
+Menu */
+
+#buttonPlay {
+    width: 26vw;
+    margin-bottom: -8vw;
+}
+
+#buttons h2 {
+
+    margin-bottom: -2vw;
 }
 
 
@@ -538,6 +581,7 @@ Character */
 }
 
 #info img {
+    padding-bottom: 1vw;
     width: 35%;
 }
 
@@ -554,10 +598,105 @@ Character */
     width: 20vw;
 }
 
+/* ------------------------------------------------------
+Maps */
+
+#preview {
+    padding-top: 0;
+    z-index: -1;
+    margin-bottom: -41vw;;
+}
+
+#carrousel {
+    margin-bottom: 1vw;
+}
+
+/* ------------------------------------------------------
+HUD */
+
+#hud {
+    padding-top: 12vw;
+    padding-bottom: 15vw;
+}
+
+/* ------------------------------------------------------
+Config */
+
+#config .settings-window {
+    width: 300px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+  }
+  #config .settings-window h2 {
+    margin-bottom: 20px;
+  }
+  #config .control {
+    margin-bottom: 20px;
+  }
+  #config .volume-bar {
+    width: 100%;
+  }
+  #config .toggle-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  #config .toggle-button.off {
+    background-color: #dc3545;
+  }
+
 }
 
 @media only screen and (max-width: 504px) {
    
+    #c2a a
+    {
+        margin-bottom: 0;
+    }
+    
+    #c2a h1
+    {
+        padding: 3vh;
+        font-size: 1.6vh;
+    }
+    
+    #c2a h1:hover
+    {
+        padding: 3vh;
+        font-size: 1.6vh;
+    }
+
+    footer {
+        margin-top: -15vw;
+    }
+
+/* ------------------------------------------------------
+Index */
+
+#presentation {
+    padding-top: 0;
+    padding: 1vw;
+    padding-bottom: 8vw;
+}
+
+#presentation img {
+    width: 30vw;
+}
+
+#presentation p {
+    margin-bottom: -6vw;
+    padding-bottom: 0;
+    padding-right: 0vw;
+    margin-right: -4vw;
+}
+
  /* ------------------------------------------------------
 Character */
 
@@ -584,21 +723,5 @@ Character */
     height: 5px;
 }
 
-#c2a a
-{
-    margin-bottom: 0;
-}
-
-#c2a h1
-{
-    padding: 3vh;
-    font-size: 1.6vh;
-}
-
-#c2a h1:hover
-{
-    padding: 3vh;
-    font-size: 1.6vh;
-}
 
 }
