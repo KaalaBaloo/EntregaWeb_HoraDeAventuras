@@ -66,15 +66,20 @@ p
     font-family: "Chewy";
     letter-spacing: 0.06vw;
     font-size: 2.5vw;
+    margin-top: 20vh;
 }
 
 header {
-    text-align: center;
-}
-
-header img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
     width: 100%;
-    height: auto;
+    height: 25%;
+    margin-top: 10vh;
+    
+    
 }
 
 header h1 {
@@ -171,14 +176,17 @@ Menu */
 }
 
 #buttonPlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
     padding: 2vw;
-    position: center;
     filter: brightness(100%);
 }
 
 #buttonPlay :hover {
-    padding: 3vw;
-    position: center;
     filter: brightness(80%);
 }
 
@@ -329,9 +337,7 @@ MEDIA QUERIES */
 
 @media only screen and (min-width: 1080px) {
 
-header .remove {
-    display: none;
-}
+
 
 h2
 {
