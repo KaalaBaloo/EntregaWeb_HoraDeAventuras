@@ -106,7 +106,7 @@ section {
 #c2a h1
 {
     font-family: "Slackey";
-    background-image: url("../media/images/cartel_01.png");
+    background-image: url("../media/images/BtonAjustes.png");
     filter: brightness(100%);
     padding: 3vw;
     background-position: center;
@@ -118,7 +118,7 @@ section {
 #c2a h1:hover
 {
     font-family: "Slackey";
-    background-image: url("../media/images/cartel_01.png");
+    background-image: url("../media/images/BtonAjustes.png");
     filter: brightness(80%);
     padding: 3vw;
     background-position: center;
@@ -152,9 +152,9 @@ Menu */
 #buttons h2
 {
     padding: 2vw;
-    background-image: url("../media/images/cartel_01.png");
+    background-image: url("../media/images/BtonAjustes.png");
     filter: brightness(100%);
-    padding: 3vw;
+    padding: 8vw;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -162,12 +162,24 @@ Menu */
 
 #buttons h2:hover
 {
-    background-image: url("../media/images/cartel_01.png");
+    background-image: url("../media/images/BtonAjustes.png");
     filter: brightness(80%);
-    padding: 3vw;
+    padding: 7vw;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#buttonPlay {
+    padding: 2vw;
+    position: center;
+    filter: brightness(100%);
+}
+
+#buttonPlay :hover {
+    padding: 3vw;
+    position: center;
+    filter: brightness(80%);
 }
 
 /* ------------------------------------------------------
