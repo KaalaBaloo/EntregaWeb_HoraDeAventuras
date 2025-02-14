@@ -41,4 +41,17 @@ $(document).ready(function() {
 
 
 });
+    //Maps
+
+    $(".thumbnail").click(function () {
+        $(".thumbnail").removeClass("active");
+
+        $(this).addClass("active");
+
+        let newSrc = $(this).attr("src");
+        let newName = $(this).data("name");
+
+        $("#preview img").attr("src", newSrc);
+        $("#preview h2").text(newName);
+    })
 
