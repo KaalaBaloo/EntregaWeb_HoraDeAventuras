@@ -133,6 +133,10 @@ section {
 /* ------------------------------------------------------
 Index */
 
+#scroll {
+    overflow: scroll;
+}
+
 #presentation img {
     height: 25vh;
     width: 40vw;
