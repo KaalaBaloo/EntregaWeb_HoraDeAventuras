@@ -26,13 +26,12 @@
 img {
     width: 100%;
     height: auto;
-    vertical-align: middle;
 }
 
 .logo {
-    height: 30vh;
+    height: 40vh;
     width: auto;
-    margin-bottom: -4vh;
+    margin-top: 4vh;
 }
 
 body{
@@ -99,12 +98,19 @@ section {
     padding-bottom: 5vh;
 }
 
+
 #c2a a
 {
     color:rgb(210, 10, 10);
     text-decoration: none;
     margin-bottom: -5vw;
 }
+
+#c2a a img{
+    width: 20vw;
+    height: auto;
+}
+
 
 #c2a h1
 {
@@ -137,58 +143,112 @@ Index */
     overflow: scroll;
 }
 
+#presentation {
+    padding-top: 5.5vw;
+    align-items: flex-start;
+    padding: 5vh;
+}
+
 #presentation img {
-    height: 25vh;
-    width: 40vw;
+    height: auto;
+    width: 35vw;
     object-fit: cover;
 }
 
+#presentation div {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+#presentation p {
+    padding-bottom: 5vh;
+    
+}
+
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: left;
+    text-align: justify;
+    flex-direction: column;
+    color: #FEB825;
+    padding-bottom: 3vw;
+
+}
+
+footer h2 {
+    padding-left: 2vw;
+}
+#formulario {
+    background-color: #FEB825;
+    color: black;
+    text-align: justify;
+    padding: 2vw;    
+}
+
+#formulario img {
+    
+    height: 5vw;
+    width: auto;
+}
+
+#formulario label {
+    font-family: "Chewy";
+}
+
+
+
+
 /* ------------------------------------------------------
 Menu */
-
 #buttons {
+    display: flex;
     flex-direction: column;
-    text-align: center;
+    margin-top: -15vw;
 }
 
 #buttons a {
     padding: 1vh;
+    margin-bottom: -10vh;
     color:rgb(210, 10, 10);
     text-decoration: none;
 }
 
-#buttons h2
+#buttonPlay {
+    display: flex;
+    padding: 1vw;
+    width: 20vw;
+    height: auto;
+    position: center;
+    align-items: center;
+    filter: brightness(100%);
+    margin-bottom: -5vw;
+}
+
+#buttonPlay :hover {
+    filter: brightness(80%);
+}
+
+#buttons h2 
 {
-    padding: 2vw;
     background-image: url("../media/images/BtonAjustes.png");
     filter: brightness(100%);
-    padding: 8vw;
+    padding: 4vw;
+    text-align: center;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #buttons h2:hover
-{
-    background-image: url("../media/images/BtonAjustes.png");
-    filter: brightness(80%);
-    padding: 7vw;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#buttonPlay {
-    padding: 2vw;
-    position: center;
-    filter: brightness(100%);
-}
-
-#buttonPlay :hover {
-    padding: 3vw;
-    position: center;
+{    
     filter: brightness(80%);
 }
+
+
+
 
 /* ------------------------------------------------------
 Character */
