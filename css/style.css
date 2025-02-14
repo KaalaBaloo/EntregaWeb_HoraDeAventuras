@@ -42,6 +42,7 @@ body{
     background-size: cover;
     height: 100vh;
     width: 100vw;
+    overflow: hidden;
 }
 
 h1{
@@ -66,20 +67,17 @@ p
     font-family: "Chewy";
     letter-spacing: 0.06vw;
     font-size: 2.5vw;
-    margin-top: 20vh;
 }
 
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    
+    text-align: center;
+}
+
+header img {
     width: 100%;
-    height: 25%;
-    margin-top: 10vh;
-    
-    
+    height: 18vw;
+    object-fit: cover;
+    object-position: center -70px;
 }
 
 header h1 {
@@ -111,13 +109,14 @@ section {
 #c2a h1
 {
     font-family: "Slackey";
+    font-size: 2.2vw;
     background-image: url("../media/images/BtonAjustes.png");
     filter: brightness(100%);
-    padding: 3vw;
+    padding: 8vw;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    font-size: 1.6vw;
+    background-size: contain;
+    margin-top: -5vw;
 }
 
 #c2a h1:hover
@@ -125,7 +124,7 @@ section {
     font-family: "Slackey";
     background-image: url("../media/images/BtonAjustes.png");
     filter: brightness(80%);
-    padding: 3vw;
+    padding: 8vw;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -176,17 +175,14 @@ Menu */
 }
 
 #buttonPlay {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    width: 100%;
-    height: 50%;
     padding: 2vw;
+    position: center;
     filter: brightness(100%);
 }
 
 #buttonPlay :hover {
+    padding: 3vw;
+    position: center;
     filter: brightness(80%);
 }
 
@@ -337,7 +333,9 @@ MEDIA QUERIES */
 
 @media only screen and (min-width: 1080px) {
 
-
+header .remove {
+    display: none;
+}
 
 h2
 {
