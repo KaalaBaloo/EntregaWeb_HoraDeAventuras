@@ -74,7 +74,9 @@ header {
 
 header img {
     width: 100%;
-    height: auto;
+    height: 18vw;
+    object-fit: cover;
+    object-position: center -70px;
 }
 
 header h1 {
