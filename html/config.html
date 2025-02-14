@@ -12,18 +12,29 @@
 
     <body>
         <header>
-            <a href="../index.html" target="self" class="remove">
+            <a href="../index.html" target="self">
                 <img src="../media/images/Banner.webp">
             </a>
             <h1>Configuración</h1>
         </header>
         <main>
-            <section id="buttons">
-                <div>
-                     <a href="../html/menu.html"><h2>Resolución</h2></a>
-                     <a href="../html/menu.html"><h2>Calidad</h2></a>
-                     <a href="../html/menu.html"><h2>Volumen Hud</h2></a>
-                </div>
+            <section id="config">
+                <div class="settings-window">
+                    <h2>Ajustes</h2>
+                    <div class="control">
+                      <p>Música:</p>
+                      <button id="musicToggle" class="toggle-button">Sí</button>
+                    </div>
+                    <div class="control">
+                      <p>Volumen:</p>
+                      <input type="range" id="volumeControl" class="volume-bar" min="0" max="1" step="0.1" value="0.5">
+                    </div>
+                    <audio id="backgroundMusic" loop>
+                      <source src="tu-musica.mp3" type="audio/mpeg">
+                      Tu navegador no soporta el elemento de audio.
+                    </audio>
+                  </div>
+                  
              </section>
              <section id="c2a">
                 <a href="../html/menu.html"><h1>Volver</h1></a>
